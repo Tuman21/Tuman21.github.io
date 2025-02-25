@@ -1,3 +1,16 @@
+header {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+.custom-link {
+    color: black;
+    text-decoration: none;
+}
+.custom-link:active {
+    background-color: yellow; 
+    color: red; 
+}
 body {
     display: flex;
     justify-content: center;
@@ -15,13 +28,10 @@ body {
 .searchBtn {
     background-color: #f8f80c;
     color: #cc0000;
-    
-    
-    
+    font-weight: bold;
+    border: none;
 }
 .searchFld{
-    max-width: 60%;
+    max-width: 50%;
     margin-left: 15%;
-   
-    
 }
