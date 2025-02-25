@@ -10,4 +10,18 @@ body {
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
+    
+}
+.searchBtn {
+    background-color: #f8f80c;
+    color: #cc0000;
+    
+    
+    
+}
+.searchFld{
+    max-width: 60%;
+    margin-left: 15%;
+   
+    
 }
