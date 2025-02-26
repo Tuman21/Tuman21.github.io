@@ -15,7 +15,7 @@ function performSearch(search) {
     .then(response => response.json())
     .then(data => {
         let gifContainer = document.getElementById('gifContainer');
-        gifContainer.innerHTML = ''; // Clear previous results
+        gifContainer.innerHTML = '';
         data.data.forEach(gif => {
             let img = document.createElement('img');
             img.src = gif.images.fixed_height.url;
@@ -29,16 +29,20 @@ function performSearch(search) {
 }
 
 
+async function openingImage() {
+    const apiKey = 'vrKPO5UnkVMAE0FGzPg7N9LV1XxgNkwX';
+    const url = `https://api.giphy.com/v1/gifs/trending?api_key=${apiKey}&limit=10`;
 
-
-
-
-
-async function getSyncData() {
-    
-    let apiKey = 'vrKPO5UnkVMAE0FGzPg7N9LV1XxgNkwX';
-    
-    let response = await fetch('https://api.giphy.com/v1/gifs/search?api_key=vrKPO5UnkVMAE0FGzPg7N9LV1XxgNkwX&q=&limit=10&offset=0&rating=pg-13&lang=en&bundle=messaging_non_clips');
-
-    
+    try{
+    let response = await fetch(url);
+    let data = await response.json();
+    let differentGif = Math.floor(Math.random() * data.data.length);
+    let img = document.createElement('img');
+    img.src = data.data[differentGif].images.fixed_height.url;
+    randomGif.appendChild(img);
+    } catch(error) {
+        console.error('Error Getting Gif:', error);
+    }
+   
 }
+openingImage();
