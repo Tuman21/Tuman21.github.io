@@ -35,3 +35,21 @@ body {
     max-width: 50%;
     margin-left: 15%;
 }
+
+.randomGif {
+    position: absolute;
+    top: 50px; /* Adjust this value as needed */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gif-container {
+    position: absolute;
+    bottom: 0; /* Move to the bottom */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
