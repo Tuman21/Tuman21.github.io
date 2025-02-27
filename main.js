@@ -7,6 +7,8 @@ document.getElementById('searchBtn').addEventListener('click', function() {
 });
 
 
+
+
 function performSearch(search) {
     const apiKey = 'vrKPO5UnkVMAE0FGzPg7N9LV1XxgNkwX';
     const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${search}&limit=10`;
