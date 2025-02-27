@@ -1,3 +1,6 @@
+html {
+    overflow-y:auto;
+ }
 header {
     position: absolute;
     top: 0;
@@ -23,6 +26,8 @@ body {
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
+    position: relative;
+    z-index: 10;
     
 }
 .searchBtn {
@@ -46,12 +51,29 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.searchFld, .searchBtn {
+    position: relative;
+    z-index: 10;
+}
+
 .gif-container {
     position: absolute;
     bottom: 20%; /* Move to the bottom */
     width: 100%;
+    max-height: 60%;
+    overflow-y: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    gap: 10px;
+    z-index: 5;
+}
+
+.gif-container img {
+    width: 210px; /* Set the desired width */
+    height: 210px; /* Set the desired height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border: #f8f80c 5px ridge; /* Add a border */
 }
