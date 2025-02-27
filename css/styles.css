@@ -35,17 +35,17 @@ body {
     color: #cc0000;
     font-weight: bold;
     border: none;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 .searchFld{
     max-width: 50%;
     margin-left: 15%;
-    margin-bottom: 20%;
+    margin-bottom: 5%;
 }
 
 .randomGif {
-    position: absolute;
-    top: 15%; /* Adjust this value as needed */
+    position:  ;
+    top: 50%; /* Adjust this value as needed */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -60,7 +60,6 @@ body {
 }
 
 .gif-container {
-    position:;
     bottom: 10%; /* Move to the bottom */
     width: 100%;
     display: flex;
