@@ -83,29 +83,6 @@ body {
         width: 190px;
         height: 190px;
     }
-}
-
-@media (max-width: 768px) {
-    .gif-container img {
-        width: 160px;
-        height: 160px;
-    }
-}
-
-@media (max-width: 576px) {
-    .gif-container img{
-        width: 100px;
-        height: 100px;
-    }
-}
-@media (max-width: 375px) {
-    .gif-container img{
-        width: 80px;
-        height: 80px;
-    }
-}
-
-@media (max-width: 992px) {
     .randomGif img  {
         width: 190px;
         height: 190px;
@@ -113,6 +90,10 @@ body {
 }
 
 @media (max-width: 768px) {
+    .gif-container img {
+        width: 160px;
+        height: 160px;
+    }
     .randomGif img {
         width: 160px;
         height: 160px;
@@ -120,15 +101,23 @@ body {
 }
 
 @media (max-width: 576px) {
+    .gif-container img{
+        width: 100px;
+        height: 100px;
+    }
     .randomGif img{
         width: 100px;
         height: 100px;
     }
 }
-
 @media (max-width: 375px) {
+    .gif-container img{
+        width: 80px;
+        height: 80px;
+    }
     .randomGif img{
         width: 80px;
         height: 80px;
     }
 }
+
