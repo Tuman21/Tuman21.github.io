@@ -47,4 +47,4 @@ async function openingImage() {
     }
    
 }
-openingImage();
+//openingImage();

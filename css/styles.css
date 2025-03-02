@@ -5,6 +5,7 @@ header {
     position: absolute;
     top: 0;
     width: 100%;
+    font-family: 'Chewy', serif;
 }
 .custom-link {
     color: black;
@@ -20,7 +21,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #177c7e;
+    background: linear-gradient(#177c7e,#9aeced) ;
+    font-family: 'Chewy', serif;
+    
 }
 .searching {
     padding: 20px;
@@ -30,6 +33,14 @@ body {
     z-index: 10;
     
 }
+.searchFld::placeholder {
+
+    color: rgb(169, 97, 97);
+  
+    opacity: 0.6; 
+  
+  }
+  
 .searchBtn {
     background-color: #f8f80c;
     color: #cc0000;
